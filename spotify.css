@@ -1,0 +1,310 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+    color:white;
+    overflow: hidden;
+    
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.55rem;
+}
+.side-player{
+    background-color: black;
+    width: 300px;
+    margin-right: 0.5rem;
+}
+
+
+.main-content{
+    background-color: rgba(0, 0,0, 0.7);
+    flex: 1;
+    overflow: scroll;
+    background-color: #121212;
+    padding-left: 1rem ;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.2rem 0.8rem;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+    transition-duration: 2s;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option a:hover{
+    text-decoration: underline;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.options{
+    display: flex;
+   
+    height: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons{
+  font-size: 1.12rem;
+  display: flex; 
+}
+.icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.icons i:hover{
+    opacity: 1;
+    border-radius: 50%;
+    background-color: #222121;
+}
+
+.playlist{
+    background-color: #222121;
+    height: 7rem;
+    margin: 0.5rem 0 0.5rem 0;
+    padding:  0.1rem 1.25rem 1rem 1.25rem;
+    border-radius: 1rem;
+}
+ .lib-p1{
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+ .lib-p2{
+    font-size: 0.75rem;
+}
+.podcast{
+    margin-top: 1.5rem;
+    background-color: #222121;
+    height: 10rem;
+    padding: 0.25rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+}
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    height: 2.1rem;
+    width:fit-content;
+    cursor: pointer;
+}
+.badge:hover{
+    opacity: 0.9;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212;
+    z-index: 10;
+    padding: 1rem 0 1rem 0;
+}
+
+
+.badge2{
+    background-color: #4d4545;
+    color: white;
+    border-radius: 90px;
+    font-weight: 700;
+    height: 2.1rem;
+    width:fit-content;
+    cursor: pointer;
+
+}
+
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.card{
+    background-color:#232323;
+    height: 15rem;
+    text-align: start;
+    border-radius: 0.7rem 0.7rem 0 0;
+    padding: 0.4rem;
+    width: 160px;
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+
+.card-container{
+   display: flex;
+   flex-wrap:wrap;
+}
+.card-img{
+    width: 100%;
+    /* padding: 0.5rem 0.5rem 0.5rem 0.7rem; */
+    border-radius: 0.5rem;
+
+}
+.card-title{
+   font-size: 0.9rem;
+   font-weight: 600;
+}
+.card-content{
+    font-size: 0.75rem ;
+    font-weight: 500;
+    opacity: 0.7;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 80%;
+    height: 60%;
+   border-top: 1px solid white;
+}
+
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-part{
+    width: 25%;
+    height: 100%;
+    display: flex;
+  
+}
+
+.Darshan{
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid black;
+    cursor: pointer;
+}
+   
+.song-content{
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    margin-left: 0.7rem;
+    cursor: pointer;
+}
+.song-name:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.singer-name:hover{
+    text-decoration: underline;
+}
+.song-name{
+    font-weight: 700;
+}
+.singer-name{
+    opacity: 0.7;
+}
+.like{
+   margin-top: 1.6rem;
+   margin-left: 1rem;
+   opacity: 0.5;
+}
+.like:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.right-part{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 1rem;
+}
+.icons-right{
+    opacity: 0.75;
+}
+.icons-right:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.player{
+    width: 50%;
+ 
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.player-icon{
+    height: 1rem;
+    margin-left: 2rem;
+}
+.play{
+    height: 2.5rem;
+    opacity: 0.95;
+}
+.player-range{
+    cursor: pointer;
+    width: 70%;
+    appearance: none;
+    background-color: #4d4545;
+    height: 0.4rem;
+    border-radius: 100px;
+
+    
+}
+
+.progress-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    cursor: pointer;
+    
+}
+
